@@ -14,4 +14,3 @@ public abstract class HttpServlet implements Servlet {
         }
     }
 }
-https://github.com/flyingzh/minitomcat.git
