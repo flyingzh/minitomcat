@@ -4,7 +4,7 @@
 
 http://localhost:8080/demo1/lagou
 
- http://localhost:8080/demo1/lagou
+ http://localhost:8080/demo2/lagou
 
 
 
@@ -16,13 +16,13 @@ Tomcat 设计了两个核⼼组件连接器（Connector）和容器（Container�
 
 容器，负责内部处理：加载和管理Servlet，以及具体处理Request请求；
 
-![image-20200331221514521](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200331221514521.png)
+![image-20200331221514521](https://github.com/flyingzh/minitomcat/tree/master/image/image-20200331221514521.png)
 
 #### 连接器组件Coyote
 
 Coyote 是Tomcat 中连接器的组件名称 , 是对外的接口。客户端通过Coyote与服务器建立连接、发送请求并接受响应 。Coyote 负责的是具体协议（应⽤层）和IO（传输层）相关内容。
 
-![image-20200331221746304](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200331221746304.png)
+![image-20200331221746304](https://github.com/flyingzh/minitomcat/tree/master/image/image-20200331221746304.png)
 
 ##### EndPoint
 
@@ -44,7 +44,7 @@ Coyote 协议接口， 通过Endpoint 和 Processor ， 实现针对具体协议
 
 Tomcat就是一个Catalina的实例，因为Catalina是Tomcat的核心
 
-![image-20200331221726715](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200331221726715.png)
+![image-20200331221726715](https://github.com/flyingzh/minitomcat/tree/master/image/image-20200331221726715.png)
 
 Catalina
 负责解析Tomcat的配置文件（server.xml） , 以此来创建服务器Server组件并进行管理
