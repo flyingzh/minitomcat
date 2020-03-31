@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Server>
+    <Service>
+        <Connector port="8080"/>
+        <Engine>
+            <Host name="localhost" appBase="E:/lagou/lagouhw/Minicat/webapps" />
+        </Engine>
+    </Service>
+</Server>
